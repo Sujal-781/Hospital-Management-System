@@ -1,0 +1,70 @@
+Requirement Gathering – Lab 1
+
+Project Title:
+
+Hospital Management System
+
+⸻
+
+Objective:
+
+The objective of requirement gathering was to understand the real-world working of a hospital and identify the necessary data entities, attributes, and relationships required to design an efficient hospital database management system.
+
+⸻
+
+Sources of Requirement Gathering:
+	1.	Observation of hospital workflows such as patient registration, consultation, billing, and discharge
+	2.	Discussion with hospital staff and healthcare professionals
+	3.	Analysis of hospital records including patient details, doctor schedules, and treatment reports
+	4.	Study of similar hospital management systems available online
+	5.	Understanding academic DBMS laboratory requirements
+
+⸻
+
+Functional Requirements Identified:
+	1.	The system should store patient personal and contact details.
+	2.	Each patient should have a unique patient ID.
+	3.	The system should store doctor details including specialization and availability.
+	4.	Doctors can treat multiple patients.
+	5.	Each patient can consult multiple doctors.
+	6.	The system should manage appointment scheduling between patients and doctors.
+	7.	A patient should not be allowed to book overlapping appointments.
+	8.	The system should maintain medical records including diagnosis, treatment, and prescriptions.
+	9.	The system should store details of hospital departments and rooms.
+	10.	The system should manage patient admission and discharge details.
+	11.	The system should generate billing information for treatments and services provided.
+
+⸻
+
+Non-Functional Requirements:
+	1.	The system should ensure data consistency and integrity.
+	2.	The system should prevent duplicate records using primary and unique key constraints.
+	3.	The database should be normalized to reduce redundancy.
+	4.	The system should support efficient data retrieval and reporting.
+	5.	The system should provide secure access to sensitive patient data.
+
+⸻
+
+Identified Entities:
+	1.	Patients
+	2.	Doctors
+	3.	Appointments
+	4.	Medical Records
+	5.	Departments
+	6.	Rooms
+	7.	Bills
+
+⸻
+
+Relationships Identified:
+	1.	One-to-Many relationship between Departments and Doctors.
+	2.	Many-to-Many relationship between Patients and Doctors (resolved using Appointments table).
+	3.	One-to-Many relationship between Patients and Medical Records.
+	4.	One-to-Many relationship between Patients and Bills.
+	5.	One-to-Many relationship between Rooms and Patients (during admission).
+
+⸻
+
+Conclusion:
+
+The requirement gathering phase helped in understanding the hospital’s operational workflow and identifying key entities, attributes, and relationships. Based on these requirements, the database schema was designed following DBMS principles such as normalization, referential integrity, and constraint enforcement to ensure efficiency and reliability.
